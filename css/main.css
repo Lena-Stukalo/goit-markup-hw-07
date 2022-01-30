@@ -1,0 +1,26 @@
+@import url(./utils/_reset);
+@import url(./utils/_common);
+@import url(./utils/_buttons);
+@import url(./utils/_visually-hidden);
+@import url(./components/_logo);
+@import url(./components/_heder);
+@import url(./components/_hero);
+@import url(./components/_qualities);
+@import url(./components/_ourwork);
+@import url(./components/_team);
+@import url(./components/_clients);
+@import url(./components/_filtr-button);
+@import url(./components/_projects);
+@import url(./components/_footer);
+@import url(./components/_modal);
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --hightlight-color: #2196f3;
+  --prirmary-backrgaund-color: #ffffff;
+  --hero-backrgaund-color: #2f303a;
+  --button-backgraund-color: #f5f4fa;
+  --icon-fill-color: #afb1b8;
+  --cubic-tranzition: cubic-bezier(0.4, 0, 0.2, 1);
+}
+/*# sourceMappingURL=main.css.map */
