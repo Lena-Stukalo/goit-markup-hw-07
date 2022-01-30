@@ -1,18 +1,6 @@
 .header {
   border-bottom: 1px solid #ececec;
 }
-.logo {
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: #000000;
-  margin-right: 93px;
-}
-.logo-web {
-  color: var(--hightlight-color);
-}
 
 .navigation {
   display: flex;
@@ -29,7 +17,7 @@
 .site-nav-item:not(:last-child) {
   margin-right: 50px;
 }
-.pages-navigation {
+.site-nav__link {
   position: relative;
   color: var(--title-text-color);
   font-weight: 500;
@@ -40,13 +28,14 @@
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.pages-navigation:hover,
-.pages-navigation:focus {
-  color: var(--hightlight-color);
-}
-.pages-navigation.cureent {
-  color: var(--hightlight-color);
+
+  &:focus,
+  &:hover {
+    color: var(--hightlight-color);
+  }
+  &.cureent {
+    color: var(--hightlight-color);
+  }
 }
 
 .cureent::after {
@@ -64,7 +53,7 @@
   display: flex;
   margin-left: auto;
 }
-.contact-nav {
+.contact__link {
   color: var(--primary-text-color);
   display: flex;
   font-weight: 500;
@@ -74,16 +63,17 @@
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--hightlight-color);
+  }
 }
-.contact-svg {
+.contact__svg {
   fill: currentColor;
   margin-right: 10px;
 }
 
 .contact-item:not(:last-child) {
   margin-right: 50px;
-}
-.contact-nav:hover,
-.contact-nav:focus {
-  color: var(--hightlight-color);
 }
